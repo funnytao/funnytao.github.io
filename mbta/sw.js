@@ -2,10 +2,10 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/style.css',
-        '/js/all.js',
+        '/mbta/',
+        '/mbta/index.html',
+        '/mbta/css/style.css',
+        '/mbta/js/all.js',
       ]);
     })
   );
