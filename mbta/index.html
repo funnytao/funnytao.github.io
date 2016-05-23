@@ -10,7 +10,7 @@
   </body>
   <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/mbta/sw.js', { scope: '/mbta' }).then(function(reg) {
+        navigator.serviceWorker.register('/mbta/sw.js', { scope: '/mbta/' }).then(function(reg) {
 
         if(reg.installing) {
           console.log('Service worker installing');
