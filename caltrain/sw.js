@@ -2,11 +2,11 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/style.css',
-        '/js/all.js',
-        '/css/bootstrap.min.css'
+        '/caltrain',
+        '/caltrain/index.html',
+        '/caltrain/css/style.css',
+        '/caltrain/js/all.js',
+        '/caltrain/css/bootstrap.min.css'
       ]);
     })
   );
