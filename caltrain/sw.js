@@ -2,7 +2,7 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/caltrain',
+        '/caltrain/',
         '/caltrain/index.html',
         '/caltrain/css/style.css',
         '/caltrain/js/all.min.js',
@@ -23,7 +23,7 @@ this.addEventListener('fetch', function(event) {
 
  if (requestUrl.origin === location.origin) {
    if (requestUrl.pathname === '/') {
-     event.respondWith(caches.match('/caltrain'));
+     event.respondWith(caches.match('/caltrain/'));
      return;
    }
  }
