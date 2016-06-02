@@ -15,7 +15,7 @@
   </body>
   <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/caltrain/sw.js', { scope: '/caltrain' }).then(function(reg) {
+        navigator.serviceWorker.register('/caltrain/sw.js', { scope: '/caltrain/' }).then(function(reg) {
 
         if(reg.installing) {
           console.log('Service worker installing');
