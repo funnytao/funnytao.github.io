@@ -2,13 +2,13 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/style.css',
-        '/js/all.min.js',
-        '/js/googlemap.js',
-        '/css/bootstrap.min.css',
-        '/logo.png',
+        '/caltrain',
+        '/caltrain/index.html',
+        '/caltrain/css/style.css',
+        '/caltrain/js/all.min.js',
+        '/caltrain/js/googlemap.js',
+        '/caltrain/css/bootstrap.min.css',
+        '/caltrain/logo.png',
         'https://funnytao.github.io/caltrain/caltrain/stops.json',
         'https://funnytao.github.io/caltrain/caltrain/stop_time.json',
         'https://funnytao.github.io/caltrain/caltrain/trips.json',
@@ -23,7 +23,7 @@ this.addEventListener('fetch', function(event) {
 
  if (requestUrl.origin === location.origin) {
    if (requestUrl.pathname === '/') {
-     event.respondWith(caches.match('/'));
+     event.respondWith(caches.match('/caltrain'));
      return;
    }
  }
