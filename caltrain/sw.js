@@ -23,7 +23,7 @@ this.addEventListener('fetch', function(event) {
 
  if (requestUrl.origin === location.origin) {
    if (requestUrl.pathname === '/') {
-     event.respondWith(caches.match('/caltrain/'));
+     event.respondWith(caches.match('/caltrain'));
      return;
    }
  }
