@@ -6,6 +6,7 @@ this.addEventListener('install', function(event) {
         '/caltrain/index.html',
         '/caltrain/css/style.css',
         '/caltrain/js/all.js',
+        '/caltrain/js/googlemap.js',
         '/caltrain/css/bootstrap.min.css',
         'https://funnytao.github.io/caltrain/caltrain/stops.json',
         'https://funnytao.github.io/caltrain/caltrain/stop_time.json',
