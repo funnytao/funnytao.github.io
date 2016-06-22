@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: rgb(68, 0, 68);
+      }
+    </style>
   </head>
   <body>
     <div class="container"></div>
   </body>
-  <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/mbta/sw.js', { scope: '/mbta/' }).then(function(reg) {
-
-        if(reg.installing) {
-          console.log('Service worker installing');
-        } else if(reg.waiting) {
-          console.log('Service worker installed');
-        } else if(reg.active) {
-          console.log('Service worker active');
-        }
-
-        }).catch(function(error) {
-        // registration failed
-          console.log('Registration failed with ' + error);
-        });
-      };
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX-T3ca9A_fd42W7Il_BwNqHa803Skob0&libraries=geometry,places,visualization">
   </script>
   <script src="js/all.js"></script>
 </html>
