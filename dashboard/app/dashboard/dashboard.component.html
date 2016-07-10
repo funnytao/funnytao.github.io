@@ -1,0 +1,51 @@
+<div class="page-dashboard {{globalService.toggle && globalService.width>1025 ? 'page-toggle' : ''}}">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="widget">
+        <div class="widget-icon"><i class="ion-email"></i></div>
+        <div class="widget-data">
+          <div class="widget-data-int">{{globalService.width}}</div>
+          <div class="widget-data-title">NEW MESSAGES</div>
+          <div class="widget-data-subtitle">In your mailbox</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="widget">
+        <div class="widget-icon"><i class="ion-person"></i></div>
+        <div class="widget-data">
+          <div class="widget-data-int">375</div>
+          <div class="widget-data-title">REGISTED USERS</div>
+          <div class="widget-data-subtitle">On your website</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="your-clock"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel chart-panel">
+        <div class="panel-heading"><span>Issues</span></div>
+        <div class="panel-body"><app-issue-chart></app-issue-chart></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel chart-panel">
+        <div class="panel-heading"><span>Customers</span></div>
+        <div class="panel-body"><app-customer-chart></app-customer-chart></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row db-map">
+    <div class="col-md-12 map-div">
+      <div class="panel">
+        <div class="panel-heading"><span>Employee Map</span></div>
+        <div class="panel-body"><div id="world-map"></div></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["file:///C:/Users/funny/Documents/GitHub/dashboard/tmp/broccoli_type_script_compiler-input_base_path-SMUEtNaR.tmp/0/src/app/issue-chart/index.ts"],"names":[],"mappings":";;;;AAAA,iBAAc,yBAAyB,CAAC,EAAA","sourcesContent":["export * from './issue-chart.component';\n"]}
