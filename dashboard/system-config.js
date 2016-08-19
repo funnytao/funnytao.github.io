@@ -37,18 +37,13 @@ var barrels = [
     '@angular/router',
     '@angular/platform-browser',
     '@angular/platform-browser-dynamic',
-    '@angular/forms',
     // Thirdparty barrels.
     'rxjs',
     // App specific barrels.
     'app',
     'app/shared',
-    'app/sidebar',
-    'app/page',
-    'app/dashboard',
-    'app/customer-chart',
-    'app/issue-chart',
-    'app/ticket',
+    'app/upload',
+    'app/chat',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
