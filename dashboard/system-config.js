@@ -44,6 +44,9 @@ var barrels = [
     'app/shared',
     'app/upload',
     'app/chat',
+    'app/sales-chart',
+    'app/ad-chart',
+    'app/feedback-chart',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
