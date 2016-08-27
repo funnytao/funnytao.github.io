@@ -47,6 +47,7 @@ var barrels = [
     'app/sales-chart',
     'app/ad-chart',
     'app/feedback-chart',
+    'app/key-metric',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
